@@ -6,7 +6,7 @@ app.use(cors());
 
 // create port number: assign a special ID to differentiate the other servers running on the same machine
 // ip address is a building, prot number is the rooms
-app.listen(3000, () => console.log('Server running on port 3000'));
+// app.listen(3000, () => console.log('Server running on port 3000'));
 
 
 // middle ware between the client and server check encoding of body and decode for us
