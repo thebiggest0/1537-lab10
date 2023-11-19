@@ -20,6 +20,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 
 app.get('/getCityWeather', async (req, res) => {
+    console.log('success2')
     resp = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${req.query.cname}&appid=58e07651f9ea9b5f857b81af3b96062c&units=metric`)
     jsonResp = await resp.json()
     res.send(jsonResp);
